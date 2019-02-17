@@ -1,0 +1,7 @@
+{
+	"eslint.alwaysShowStatus": true,
+	"prettier.eslintIntegration": true,
+	"vetur.format.defaultFormatter.js": "prettier-eslint",
+	"eslint.autoFixOnSave": true,
+	"vetur.format.defaultFormatter.html": "none"
+}
