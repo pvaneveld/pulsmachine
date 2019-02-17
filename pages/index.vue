@@ -34,6 +34,7 @@
 h1 {
   font-size: calc(var(--text-xl) * 3);
   text-align: center;
+  font-weight: bold !important;
 }
 @media only screen and (max-width: 500px) {
   h1 {
