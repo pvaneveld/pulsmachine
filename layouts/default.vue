@@ -1,8 +1,8 @@
 <template>
-  <v-app class="app">
+  <v-app class="app" dark>
     <v-content>
       <v-container style="padding-bottom: 0px;">
-        <nuxt />
+        <nuxt/>
       </v-container>
     </v-content>
   </v-app>

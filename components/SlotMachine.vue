@@ -1,11 +1,15 @@
 <template>
   <div>
     <div class="slot-machine">
-      <div v-for="index in 3" :key="index" class="slot">
+      <div v-for="index in 2" :key="index" class="slot">
         <div class="slot__window">
           <div class="slot__wrap">
-            <div v-for="opt in slots" :key="opt.id" class="slot__item" :style="{ backgroundImage: `url('${opt}')!important` }">
-            </div>
+            <div
+              v-for="opt in slots"
+              :key="opt.id"
+              class="slot__item"
+              :style="{ backgroundImage: `url('${opt}')!important` }"
+            ></div>
           </div>
         </div>
       </div>
@@ -13,17 +17,16 @@
 
     <div class="btn-container">
       <h2>Druk op die puls knop!</h2>
-      <button @click="start" class="push--flat" />
+      <button @click="start" class="push--flat"/>
     </div>
   </div>
-
 </template>
 
 <style>
 .btn-container {
   display: block;
   margin: 0 auto;
-  background-color: #ccc;
+  background-color: #424242;
   max-width: 500px;
   border-radius: 10px;
   display: flex;
@@ -144,14 +147,18 @@ export default {
   data: function() {
     return {
       slots: [
-        '/paul.jpeg',
-        '/leon.jpeg',
-        '/tom.jpeg',
-        '/tim.jpeg',
-        '/joris.jpeg',
-        '/dion.jpeg',
-        '/pim.jpeg',
-        '/jim.jpeg'
+        '/paul.jpg',
+        '/leon.jpg',
+        '/tom.jpg',
+        '/tim.jpg',
+        '/joris.jpg',
+        '/dion.jpg',
+        '/pim.jpg',
+        '/jim.jpg',
+        '/bas.jpg',
+        '/eric.jpg',
+        '/dennis.jpg',
+        '/quint.jpg'
       ],
       opts: false,
       startedAt: null
