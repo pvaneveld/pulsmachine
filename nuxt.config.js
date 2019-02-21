@@ -8,6 +8,12 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Staatliches'
+      }
+    ],
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
